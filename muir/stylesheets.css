@@ -1,0 +1,222 @@
+@charset "UTF-8";
+/* CSS Document */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: none;		
+}
+
+.left {float:left;}
+.right {float:right;}
+.clear {clear:both;}
+
+a {
+	color: #19bcb9;
+	text-decoration:none;
+	outline:none;
+}
+
+h1 {
+	font-size:1px;
+	text-indent:-9999px;
+}
+
+h3 {
+	font-family:Helvetica, Verdana, Arial, sans-serif;
+	font-size:20px;
+	line-height:25px;
+	color:#19bcb9;
+	margin-bottom:10px;
+}
+
+h4 {
+	font-family:Helvetica, Verdana, Arial, sans-serif;
+	font-size:16px;
+	margin-bottom:10px;
+}
+
+/**** LAYOUT ****/
+
+body {
+	background-color: #666;
+	}
+
+
+.container {
+	width:1026px;
+	height:800px;
+	margin: 0 auto;
+	background: rgb(230,229,229);
+
+}
+
+#logo{
+	width:511px;
+	height:222px;
+	margin-bottom:15px;
+}
+
+#logo img {
+	margin-top:65px;
+}
+
+/*nav*/
+
+ul#nav {
+	list-style:none;	
+	text-align:left;
+	width:190px;
+}
+
+/*default link style*/
+ul#nav li a {
+	display: block;
+	width:165px;
+	height:34px;
+	margin: 10px 0;
+}
+
+/*custom image for each link */
+ul#nav li.installation a { background: url(images/installation_button.jpg) no-repeat top left; }
+ul#nav li.installation a:hover { background: url(images/installation_blue.jpg) no-repeat top left; }
+#installation ul#nav li.installation a { background: url(images/installation_blue.jpg) no-repeat top left; }
+
+ul#nav li.writings a { background: url(images/writings_button.jpg) no-repeat top left; }
+ul#nav li.writings a:hover { background: url(images/writings_blue.jpg) no-repeat top left; }
+#writings ul#nav li.writings a { background: url(images/writings_blue.jpg) no-repeat top left; }
+
+ul#nav li.braille_font a { background: url(images/braille_font_button.jpg) no-repeat top left; }
+ul#nav li.braille_font  a:hover { background: url(images/braille_font_blue.jpg) no-repeat top left; }
+#braille_font ul#nav li.braille_font a { background: url(images/braille_font_blue.jpg) no-repeat top left; }
+
+ul#nav li.designer a { background: url(images/designer_button.jpg) no-repeat top left; }
+ul#nav li.designer a:hover { background: url(images/designer_blue.jpg) no-repeat top left; }
+#designer ul#nav li.designer a { background: url(images/designer_blue.jpg) no-repeat top left; }
+
+ul#nav li.gd_mfa a { background: url(images/gd_mfa_button.jpg) no-repeat top left; }
+ul#nav li.gd_mfa  a:hover { background: url(images/gd_mfa_blue.jpg) no-repeat top left; }
+#gd_mfa ul#nav li.gd_mfa a { background: url(images/gd_mfa_blue.jpg) no-repeat top left; }
+
+
+ul#nav img {
+	margin: 0px 0px 5px 0px;
+	border:none;
+}
+
+/*end of nav*/
+
+#content_home {
+	width:600px;
+	height:525px;
+	margin-right:35px;
+	margin-top:15px;
+}
+
+#content_home img{
+	margin-bottom:20px;
+}
+
+#content_home p{
+	font-family:Helvetica, Verdana, Arial, sans-serif;
+	font-size:14px;
+	width:400px;
+	line-height:18px;
+}
+
+/*beginning of writing section*/
+
+
+ul#writings {
+	list-style:none;
+	float:left;
+	padding:10px;
+	margin-left:182px;
+	margin-bottom:-10px;
+	width:500px;	
+}
+
+ul#writings li {
+	display:inline;	
+	font-family:Helvetica, Verdana, Arial, sans-serif;
+	font-size:15px;	
+	color:#000;
+}
+
+ul#writings li a {
+	font-family:Helvetica, Verdana, Arial, sans-serif;
+	font-size:15px;	
+	color:#000;
+	text-decoration:none;
+	padding:2px 6px;
+	font-weight: bold;
+}
+
+#manifesto p {
+	font-family:Helvetica, Verdana, Arial, sans-serif;
+	font-size:10px;
+	float:left;	
+}
+
+#content_writings {
+	width:475px;
+	height:450px;
+	margin-right:160px;
+	overflow:auto;
+}
+
+#content_writings p{
+	font-family:Helvetica, Verdana, Arial, sans-serif;
+	font-size:14px;
+	line-height:18px;
+}
+
+#content_writings img{
+	margin-bottom:10px;
+}
+
+/*end of writing section*/
+
+/*beginning of installation section*/
+
+#content_installation {
+	float:left;
+	width:675px;
+	height:450px;
+	margin-top:15px;
+	margin-left:70px;
+	overflow:auto;
+	
+}
+
+#content_installation p{
+	font-family:Helvetica, Verdana, Arial, sans-serif;
+	font-size:14px;
+	margin-bottom:7px;
+}
+
+#content_installation img {
+	margin-bottom:10px;
+}
+
+/*end of installation section*/
+
+
+/*beginning of braille_font section*/
+#content_font {
+	margin-left:390px;
+	margin-top:25px;
+}
+
+#content_font p{
+	font-family:Helvetica, Verdana, Arial, sans-serif;
+	font-size:14px;
+	line-height:18px;
+	width:450px;
+	margin-bottom:20px;
+}
+
+#content_font img {
+	margin-top:10px;
+}
+/*end of braille_font section*/

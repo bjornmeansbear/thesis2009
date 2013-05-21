@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Design to Empower</title>
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #666666;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+}
+.twoColFixLtHdr #container {
+	width: 1152px;  /* using 20px less than a full 800px width allows for browser chrome and avoids a horizontal scroll bar */
+	background: #FFFFFF;
+	margin: 0 auto; /* the auto margins (in conjunction with a width) center the page */
+	border: 1px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+} 
+.twoColFixLtHdr #header {
+	padding: 0 10px 0 20px;  /* this padding matches the left alignment of the elements in the divs that appear beneath it. If an image is used in the #header instead of text, you may want to remove the padding. */
+	background-color: #FFFFFF;
+} 
+.twoColFixLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+}
+.twoColFixLtHdr #sidebar1 {
+	float: left; /* since this element is floated, a width must be given */
+	width: 200px;
+	background-color: #FFFFFF;
+	background-image: url(Images/WsNav_bgd.jpg);
+	background-repeat: no-repeat;
+	background-position: right 230px;
+	padding-top: 56px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	padding-left: 20px;
+}
+.twoColFixLtHdr #mainContent {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	background-color: #FFFFFF;
+	background-image: url(Images/Gallery_bgd.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin-top: 0px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 230px;
+	padding-top: 34px;
+	padding-right: 0px;
+	padding-bottom: 250px;
+	padding-left: 198px;
+} 
+.twoColFixLtHdr #footer {
+	padding: 0 10px 0 20px;
+	color: #FFFFFF;
+	background-color: #FFFFFF;
+} 
+.twoColFixLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+    height:0;
+    font-size: 1px;
+    line-height: 0px;
+}
+.style1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 17px;
+	font-weight: bold;
+	color: #3399cc;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 35px;
+	padding-top: 0px;
+}
+.style2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #000000;
+}
+ul#nav {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #000000;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 35px;
+	list-style-type: none;
+	background-repeat: no-repeat;
+	background-position: left 120px;
+}
+body,td,th {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+a:link {
+	color: #000000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+a:hover {
+	text-decoration: none;
+	color: #3399CC;
+}
+a:active {
+	text-decoration: none;
+	color: #3399CC;
+}
+h1 {
+	font-size: 12px;
+	color: #000000;
+}
+h2 {
+	font-size: 10px;
+	color: #000000;
+}
+.style12 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+}
+.style15 {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10px; font-style: normal; line-height: normal; font-weight: bold; color: #000000; }
+.style16 {font-weight: bold; color: #000000; font-style: normal; line-height: normal;}
+Thesis id {
+	background-color: #FFFFFF;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 35px;
+}
+hmain {
+	margin-right: 150px;
+	margin-top: 100px;
+	padding-top: 300px;
+	padding-right: 250px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+h#main {
+	background-color: #FFFFFF;
+}
+.bodytext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 21px;
+	color: #000000;
+}
+.workshopheader {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-style: normal;
+	line-height: 21px;
+	font-weight: bold;
+	color: #000000;
+}
+.heading1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	color: #3399CC;
+	padding-bottom: 0px;
+	padding-top: 4px;
+	padding-left: 0px;
+	line-height: 21px;
+}
+.style24 {color: #FFFFFF}
+--> 
+</style>
+<!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.twoColFixLtHdr #sidebar1 { width: 230px; }
+</style>
+<![endif]--><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColFixLtHdr #sidebar1 { padding-top: 30px; }
+.twoColFixLtHdr #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColFixLtHdr">
+
+<div id="container">
+  <div id="header">
+    <h1>&nbsp;</h1>
+  <!-- end #header --></div>
+  <div id="sidebar1">
+    <h3><span class="style1">Giselle Lewis-Archibald<br />
+    </span><span class="style1">MFA, Graphic Design<br />
+    </span><span class="style1">Thesis 2009</span><br />
+    <br />
+    </h3>
+    <ul id="nav">
+      <li>
+        <h2><span class="style15"><a href="default.html">Artist Statement</a></span></h2>
+      </li>
+      <li class="style12">
+        <h2><a href="Zines_Kate.html" class="style16">D.T.E. Zines</a> <img src="Images/zines_arrow.jpg" width="82" height="7" /></h2>
+      </li>
+      <li class="style12">
+        <h2><a href="Guidebook.html">D.T.E. Guidebook</a></h2>
+      </li>
+      <li class="style12">
+        <h2><a href="ThesisExhibit.html">Exhibit</a></h2>
+      </li>
+      <li class="style12">
+        <h2><a href="Workshops_Downloads.html"><br />
+        Workshops</a></h2>
+      </li>
+      <li class="style12">
+        <h2><a href="Feedback.html">Feedback</a></h2>
+      </li>
+      <li>
+        <h2><span class="style15"><a href="../index.html"><br />GDMFA</a></span><span class="style2"><br /></span></h2>
+      </li>
+    </ul>
+    <p>&nbsp;</p>
+  <!-- end #sidebar1 --></div>
+  <div id="mainContent">
+    <p class="bodytext"><span class="style24">---</span><span class="style15">Kate</span> <span class="style24">/</span> <span class="style15"><a href="Zines_Kate.html">1</a></span> <span class="style24">/</span> <span class="style15"><a href="Zines_Kate_2.html">2</a></span> <span class="style24">/</span> <span class="style15"><a href="Zines_Kate_3.html">3</a></span> <span class="style24">/</span> <span class="style15"><a href="Zines_Kate_4.html">4</a></span> <span class="style24">/</span> <span class="style15"><a href="Zines_Kate_5.html">5</a></span><span class="style24">------------</span><span class="style15">Sierra</span> <span class="style24">/</span> <span class="style15"><a href="Zines_Sierra.html">1</a></span> <span class="style24">/</span> <span class="style15"><a href="Zines_Sierra_2.html">2</a></span> <span class="style24">/</span> <span class="style15"><a href="Zines_Sierra_3.html">3</a></span> <span class="style24">/</span> <span class="style15"><a href="Zines_Sierra_4.html">4</a></span> <span class="style24">/</span> <span class="style15"><a href="Zines_Sierra_5.html">5</a></span></p>
+    <p class="bodytext"><img src="Images/Gallery/Gallery14.jpg" alt="Cover of Kate's zine" width="475" height="320" border="0" /></p>
+    <p class="bodytext">
+      <!-- end #mainContent -->
+    </p>
+  </div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats --><br class="clearfloat" />
+  <div id="footer">
+    <p>Footer</p>
+  <!-- end #footer --></div>
+<!-- end #container --></div>
+</body>
+</html>

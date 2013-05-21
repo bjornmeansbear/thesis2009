@@ -1,0 +1,68 @@
+/*---------------------------
+  Global Browser Reset
+---------------------------*/
+  	html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-size: 100%; }
+/* @end */
+
+/*---------------------------
+  HTML, Body
+---------------------------*/
+	body { background: #CCC url(../images/bg.jpg) repeat; font-size: 62.5%; font-family: Monaco, Courier, "Lucida Console", Monospace, sans-serif; line-height: 1; text-align: left; margin: auto; }
+
+  	ol, ul { list-style: none; }
+  	:focus { outline: 0; }
+  	table { border-collapse: collapse; border-spacing: 0; }
+
+	* { padding:0; margin:0; }
+
+	/*h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, label, ul, ol, dl, fieldset, address { margin: 0px 0; }*/
+	/* h tags */
+	h1, h2, h3, h4, h5, p { font-family: Monaco, Courier, "Lucida Console", Monospace, sans-serif; }
+	h1 { font-size: 10px; font-weight: normal; line-height: 13px; padding: 0 0 13px 0; text-transform: uppercase;   }
+	h2 { font-size: 10px; font-weight: normal; padding: 0 0 13px 0; text-transform: uppercase;  }
+	h3 { font-size: 10px; font-weight: normal; }
+	h4 { font-size: 10px; font-weight: normal;  }
+	h5 { }
+	
+	a { text-decoration: none; }
+	.column_left { height: 480px; margin: 0 20px 0 0; width: 240px;  }
+	.column_right { width: 430px; }
+	.left { float: left; }
+	.right { float: right; }
+	
+/*---------------------------
+  Nav
+---------------------------*/
+	#nav h1 a { background: url(../images/taste_logo.jpg) no-repeat; display: block; height: 24px; margin: 0 0 10px 0; overflow: hidden; text-indent: -1000em; width: 102px; }
+	#nav { background: #141011; color: #FFF; left: 87px; position: absolute; padding: 28px 26px 28px 26px; top: 188px; text-transform: uppercase; width: 195px; z-index:1;}
+	#nav ul { font-size: 13px; line-height: 17px; margin: 0 0 19px 0; }
+	#nav ul li { margin: 0 0 5px 0; }
+	#nav ul li ul { padding: 0; margin: 5px 0 0 0;  }
+	#nav ul li ul li { padding: 0 0 0 12px;  }	
+	#nav ul li a { color: #FFF; display: block;  }	
+	#nav ul li a:hover { background: #FFF; color: #000; margin: 0 0 0 -5px; padding-left: 5px; }	
+	#nav p { font-size: 14px; }
+	#nav p a { color: #FFF; font-size: 12px; line-height: 20px; }
+	#nav p a:hover { color: #FFF; }
+	a#primer { display: block; height: 20px;  width: 140px; }
+	a#primer:hover { background: url(../images/download.jpg) no-repeat right 2px; }
+		
+/*---------------------------
+  Content
+---------------------------*/	
+	#content,.section { list-style:none; margin:0 0 0 0; padding:0; }
+	#content { float:left; height:616px; margin: 73px 0 0 20px; overflow:hidden; position:relative; width:1500px; }	
+	.section { width: 4000000px; position:relative; }
+	.sub { background:#FFF; float:left; height: 533px; margin: 0 0 0 20px; padding: 30px;  position:relative; width: 322px; }
+	.sub_large { width: 700px;}
+	.sub_large_image { width: 725px !important; }
+	.sub p { font-size: 10px; line-height: 13px; padding: 0 0 13px 0; }	
+	#about img { padding: 10px 0 0 0; }
+	#about { text-align: center; }
+	a.next {  bottom: 0; color: #FFF; display: block; font-size: 12px; height: 317px;  padding: 300px 0 0 0; position: absolute; right: 0px; text-align: center; text-transform: uppercase; width: 14px;   }
+	a.next:hover, a.previous:hover { background: #141011;   }
+	a.previous {  bottom: 0; color: #FFF; display: block; font-size: 12px; height: 317px;  padding: 300px 0 0 0; position: absolute; left: 0px; text-align: center; text-transform: uppercase; width: 14px; }
+	.spacer { background: transparent; width: 260px; }
+	.sub_large_image a { color: #000; }
+	.sub_large_image a:hover { color: #FFF; }
+	

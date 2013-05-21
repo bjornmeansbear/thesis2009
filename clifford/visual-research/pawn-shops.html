@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Ryan Clifford &raquo; MICA GD/MFA THESIS 2009</title>
+<link type="text/css" rel="stylesheet" href="../css/screen-home.css" />
+<script type="text/javascript" src="../scripts/jquery-1.3.2.min.js"></script>
+<script type="text/javascript"> 
+
+	$(document).ready(function(){
+    	$("#nav>#nav-visresearch>a").addClass("active");
+    	$("#nav-pawn a").addClass("active");
+	});
+	
+	var LiSwitcher = function() {}
+
+LiSwitcher.prototype = {
+    initialize: function(CONTROLS, VIEWPORT) {
+        this.CONTROLS = CONTROLS || "div#liSwitcher-controls";
+        this.PREVIOUS = $(this.CONTROLS).children("a#liSwitcher-previous");
+        this.NEXT = $(this.CONTROLS).children("a#liSwitcher-next");
+        this.VIEWPORT = VIEWPORT || "div#liSwitcher-viewport";
+        this.ITEMS = $(this.VIEWPORT).children("ul").children("li");
+        this.INTERVAL = 10000;
+        this.index = 0;
+        var Scope = this;
+        this.timer = setInterval(function() { Scope.nextImage(); }, this.INTERVAL);
+        this.jsActive(this.CONTROLS, this.ITEMS);
+        this.eventHandlers(this.PREVIOUS, this.NEXT);
+    },
+    
+    jsActive: function(CONTROLS, ITEMS) {
+        $(CONTROLS).show();
+        $(ITEMS).not(":first").hide();
+    },
+    
+    fadeIn: function(index) {
+        this.ITEMS.eq(index).fadeIn();
+    },
+    
+    hide: function(index) {
+        this.ITEMS.eq(index).hide();
+    },    
+    
+    nextImage: function() {
+        this.hide(this.index);
+        this.index++;
+        if(this.index >= this.ITEMS.length) {
+            this.index = 0;
+        }
+        this.fadeIn(this.index);
+    },
+    
+    previousImage: function() {
+        this.hide(this.index);
+        this.index--;
+        if(this.index <= -1) {
+            this.index = this.ITEMS.length - 1;
+        }
+        this.fadeIn(this.index);
+    
+    },
+    
+    eventHandlers: function(PREVIOUS, NEXT) {
+        var Scope = this;
+        $(PREVIOUS).bind("click",function() {
+            Scope.previousImage();
+            clearInterval(Scope.timer);
+            return false;
+        });
+        $(NEXT).bind("click",function() {
+            Scope.nextImage();
+            clearInterval(Scope.timer);
+            return false;
+        });
+    }
+
+};
+
+
+var liSwitcher = new LiSwitcher();
+$(function() {
+    liSwitcher.initialize();
+});	
+ 
+</script>
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="content">
+    	<div id="content-left">
+        <p><a href="../index.html" title="Back to Splash"><img src="../images/img-header.jpg" title="Cash in a Flash | Fringe Economies in Baltimore" /></a></p>
+		<ul id="nav">
+            <li id="nav-info"><a href="../index-thesis.html" title="Thesis Statement">Thesis Statement</a></li>
+        	<li id="nav-fringe"><a href="../index.html" title="Fringe Economies">Fringe Economies</a></li>
+            <li id="nav-work"><a href="../work/iconography.html" title="Work">Work</a>
+                <ul>
+                    <li id="nav-icon"><a href="../work/iconography.html" title="Visual Iconography of Baltimore Fringe Economies">Visual Iconography of Baltimore Fringe Economies</a></li>
+                    <li id="nav-cost"><a href="../work/real-cost.html" title="The Real Cost of a $400 Loan">The Real Cost of a $400 Loan</a></li>
+                    <li id="nav-bondswork"><a href="../work/bonds-work.html" title="How Bail Bonds Work">How Bail Bonds Work</a></li>
+                    <li id="nav-hassle"><a href="../work/hassle-xxl.html" title="From 0 Hassle to XXL Bail Bonds">From 0 Hassle to XXL Bail Bonds</a></li>
+                    <li id="nav-vis"><a href="../work/vis-research.html" title="Visual Research Documentation">Visual Research Documentation</a></li>
+                </ul>
+            </li>
+            <li id="nav-exhibition"><a href="../exhibition/index.html" title="Exhibition">Exhibition</a></li>
+            <li id="nav-visresearch"><a href="../visual-research/bail-bonds.html" title="Visual Research">Visual Research</a>
+                <ul>
+                  <li id="nav-bail"><a href="../visual-research/bail-bonds.html" title="Bail Bonds">Bail Bonds</a></li>
+                    <li id="nav-check"><a href="../visual-research/check-cashing.html" title="Check Cashing">Check Cashing</a></li>
+                    <li id="nav-pawn"><a href="../visual-research/pawn-shops.html" title="Pawn Shops">Pawn Shops</a></li>
+                </ul>
+            </li>
+            <li><a href="../index.html" title="MICA GD/MFA THESIS 2009" target="_blank">MICA GD/MFA THESIS 2009</a></li> 
+        </ul>
+        </div>
+        <div id="content-right">
+        	<div id="liSwitcher-viewport">
+            <ul class="gallery">
+                <li><img src="../images/PS_Baltimore_Pawn_II.jpg" title="Baltimore Pawn II" alt="Image01" /></li>
+                <li><img src="../images/PS_Bonded.jpg" title="Bonded" alt="Image02" /></li>
+                <li><img src="../images/PS_Guns.jpg" title="Guns" alt="Image03" /></li>
+                <li><img src="../images/PS_Highlandtown.jpg" title="Highlandtown" alt="Image04" /></li>
+                <li><img src="../images/PS_Highlandtown_II.jpg" title="Highlandtown II" alt="Image05" /></li>
+                <li><img src="../images/PS_Instant_Cash.jpg" title="Instant Cash" alt="Image06" /></li>
+                <li><img src="../images/PS_Samuelsons.jpg" title="Samuelsons" alt="Image07" /></li>
+                <li><img src="../images/PS_Security.jpg" title="Security" alt="Image08" /></li>
+                <li><img src="../images/PS_South_Harbor.jpg" title="South Harbor" alt="Image09" /></li>
+            </ul>
+            </div>
+            <div id="liSwitcher-controls">
+                <a id="liSwitcher-previous" class="liSwitcher-buttons" href="#">previous</a> | <a id="liSwitcher-next" class="liSwitcher-buttons" href="#">next</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

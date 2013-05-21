@@ -1,0 +1,13 @@
+@import url("screen-globals.css");
+@import url("screen-home.css");
+@import url("screen-nav.css");
+
+body {
+	background-image:url("../images/splash.jpg");
+}
+
+#content-left {
+	background-color: #ffffff;
+	height: auto;
+	width: 210px;
+}

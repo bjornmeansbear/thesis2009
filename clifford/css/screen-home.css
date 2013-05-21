@@ -1,0 +1,47 @@
+@import url("screen-globals.css");
+@import url("screen-nav.css");
+
+#content {
+	position: relative;
+	width: 820px;
+}
+
+	#content-left {
+		position: relative;
+		width: 200px;
+		float: left;
+		padding: 10px 0 0 10px;
+	}
+
+	#content-right {
+		position: relative;
+		width: 600px;
+		float: right;
+		padding: 10px 0 0 0;
+	}
+	
+	#content-right img {
+		border: 1px solid #cccccc;
+	}
+	
+ul.gallery {
+	list-style: none;
+}
+
+div#liSwitcher-controls {
+    display: none;
+}
+
+div#liSwitcher-controls a.liSwitcher-buttons {
+	color: #333333;
+	text-decoration:none;
+}
+
+div#liSwitcher-controls a.liSwitcher-buttons:hover {
+	color: #ff0000;
+}
+
+div#liSwitcher-controls a.liSwitcher-buttons:active {
+	color: #ff0000;
+	text-decoration: none;
+}

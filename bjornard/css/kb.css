@@ -1,0 +1,140 @@
+/* @override http://graduate.mica.edu/gdmfa/thesis2009/bjornard/css/kb.css */
+
+/* CSS document */
+
+/* colors */
+/*
+tan		rgb(223,211,182)
+blue	rgb(130,150,144)
+gray	rgb(89,87,85)
+brown	rgb(119,96,69)
+green	rgb(168,197,69)
+*/
+
+* { 
+	border: none;
+	font-family: Verdana, sans-serif;
+	font-size: 100%;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	z-index: 10;
+	}
+
+.left { float: left; }
+.right { float: right; }
+.clear { clear: both; }
+.last { margin-right: 0; }
+
+/* default typography */
+body {
+	color: rgb(89,87,85);
+    font-size:100%;
+    line-height:1.125em;
+	}
+	
+p {
+    font-size:0.875em;
+	}
+
+.sidenote {
+    font-size:0.75em;
+	}
+
+h1,h2,h3,h4,h5,h6 { font-size: 1.1em; line-height: 160%; margin: .25em 0 !important; }
+h2 { font-weight: normal; }
+h3 { line-height: 125%; margin: 0 !important; }
+
+/* links */
+a { color: white; }
+a:link { }
+a:visited { }
+a:hover { text-decoration: underline; }
+a:active { }
+
+li.active a { text-decoration: line-through; }
+
+/* layout, etc */	
+body { /*background: rgb(223,211,182);*/ }
+
+#wrap {
+	}
+	
+#header, #footer {
+	background: rgb(119,96,69);
+	border-top: 1px solid rgb(223,211,182);
+	border-bottom: 3px solid rgb(89,87,85);
+	color: white !important;
+	left: 0;	
+	padding: .1em 0;
+	position: fixed;
+	width: 100%;
+	}
+#header { top: 1.5em; }
+#header ul { margin: 0 0 0 1.5em; }
+#header ul li, #header ul li h1, #header ul li h2 { display: inline; margin: 0 1.5em 0 0;}
+
+#main { margin: 6em 1.5em; }
+
+#col1 { width: 6em; margin-right: 1.5em;}
+#col1 ul#nav { width: 6em; }
+#col1 ul#nav li { background: rgb(130,150,144); margin: 0 0 .5em 0 !important; padding: .2em;}
+#col1 ul#nav li.blank { background: none; color: transparent; }
+#col1 ul#nav li.last { background: rgb(119,96,69); }
+
+#col2 { width: 15em; margin-right: 1.5em;}
+#col2 ul#links { width: 15em;}
+#col2 ul#links li { background: rgb(168,197,69); margin: 0 0 .5em 0 !important; padding: .2em; }
+#col2 ul#links li.blank { background: transparent; color: transparent; }
+#col2 ul#links li.sub { padding-left: 2em; }
+
+#content { margin: 0 1.5em 0 24em !important; }
+#content .pad { width: 30em; }
+#content .pad p { margin: 0 0 1em 0 !important; }
+/* #content .pad p span.knockout { background: rgb(89,87,85); color: white; /*line-height: 190%; padding: .2em; }*/
+#content .pad ul.work li { background: rgb(89,87,85); color: white; margin: 0 0 .5em 0 !important; padding: .2em; }
+#content .pad ul.work li p { margin: 0 !important; }
+#content .pad ul.work li p.sidenote { font-style: italic; }
+#content .pad ul.work li.image { padding: .4em !important; }
+#content .pad ul.work li.image img { width: 29.2em; }
+#content .pad dl.principles { font-size: 80%; margin: 1.5em 0 .5em 0 !important; }
+#content .pad dl.principles h4 { background: rgb(89,87,85); color: white; padding: .2em; }
+#content .pad dl.principles dt { background: rgb(89,87,85); color: white; padding: .2em; border-bottom: 1px solid white;}
+#content .pad dl.principles dd { background: rgb(89,87,85); color: white; margin: 0 0 .5em 0 !important; padding: .2em; }
+#content .pad ul.books { margin: 1.5em 0 .5em 0 !important; }
+#content .pad ul.books h4 { background: rgb(89,87,85); color: white; font-size: 80%; padding: .2em; }
+#content .pad ul.books li { background: rgb(89,87,85); color: white; margin: 0 !important; padding: .2em;}
+#content .pad ul.books li p { margin: 0!important; }
+#content .pad ul.books li p span.author { font-size: .75em; margin: 0 0 0 1em; text-transform: uppercase;}
+
+#footer { bottom: 1.5em;}
+#footer p { margin: 0 0 0 1.5em; }
+	
+/* background images */
+body.home { background: url(../i/install/install1.jpg) repeat top left; }
+body.state { background: url(../i/install/install4.jpg) repeat top left; }
+body.tgg { background: url(../i/install/install2.jpg) repeat top left; }
+body.us { background: url(../i/us/us3.jpg) repeat top left; }
+body.pos { background: url(../i/install/install3.jpg) repeat top left; }
+body.hello { background: url(../i/install/install5.jpg) repeat top right; }
+body.sl { background: url(../i/install/install6.jpg) repeat top left; }
+
+/* work list */
+body.home ol#links { color: white; width: 25em; }
+body.home ol#links li { margin: 1em 0; }
+body.home ol#links li a img { margin-right: 1em; width: 5em; }
+
+/* statement page custom styles */
+body.state #content .pad p { background: rgb(89,87,85); color: white; padding: .75em; }
+body.state #content .pad p img.right.caption { margin: 0 -6em 1.4em .6em; width: 10em; }
+
+/* tgg image list */
+body.tgg ul.work li.image.three { width: 90em;}
+body.tgg ul.work li.image.three img { width: 89.2em !important;}
+
+/* sl image list */
+body.sl ul.work li.image.long { width: 12100px;}
+body.sl ul.work li.image.long img { width: auto !important;}
+
+/* kristian bjornard is available for hire… */

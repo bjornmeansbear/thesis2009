@@ -1,0 +1,109 @@
+/* @override http://graduate.mica.edu/gdmfa/thesis2009/gdmfa.css */
+/* CSS document */
+* { 
+	font: 1em Verdana, sans-serif;
+	line-height: 1.5em;
+	margin: 0;
+	padding: 0;
+	border: none;
+	}
+	
+/**/
+.left { float: left; }
+.clear { clear: both; }
+/**/
+body { background: url(gdt_bg1.jpg) center; }
+/**/
+#wrap { margin: 0 auto; width: 980px; }
+/**/	
+#header {
+	height: 60px;
+	margin: 0 20px;
+	background: #666;
+	}
+#header h1 { 
+	color: white; 
+	font-size: 1.25em; 
+	line-height: 1.5em; 
+	margin: 0 20px; 
+	}
+#header h1 p { padding: .75em 0 0 0 ; font-weight: bold !important; }
+
+/**/
+#grid { margin: 20px 20px 0px 20px; }
+#grid ul#links { width: 940px; list-style: none;}
+#grid ul#links li {
+	float: left;
+	height: 200px;
+	margin: 0 20px 20px 0;
+	width: 300px;
+	}
+#grid ul#links li.three,
+#grid ul#links li.six,
+#grid ul#links li.nine { margin-right: 0; }
+
+/**/
+#grid ul#links li a {
+	background: url(i/work.png) center;
+	display: block;
+	height: 200px;
+	margin: 0;
+	width: 300px;
+	text-decoration: none;
+	}
+#grid ul#links li a:hover { background: white; }
+#grid ul#links li.one a:hover { background: url(i/armstrong.jpg) no-repeat center left; }
+#grid ul#links li.two a:hover { background: url(i/bjornard.jpg) no-repeat center left; }
+#grid ul#links li.three a:hover { background: url(i/clifford.jpg) no-repeat center left; }
+#grid ul#links li.four a:hover { background: url(i/davis.jpg) no-repeat center left; }
+#grid ul#links li.five a:hover { background: url(i/galbreath.jpg) no-repeat center left; }
+#grid ul#links li.six a:hover { background: url(i/ha.jpg) no-repeat center left; }
+#grid ul#links li.seven a:hover { background: url(i/archibald.jpg) no-repeat center left; }
+#grid ul#links li.eight a:hover { background: url(i/muir.jpg) no-repeat center left; }
+#grid ul#links li.nine a:hover { background: url(i/venne.jpg) no-repeat center left; }
+#grid ul#links li a p {
+	color: white;
+	font-size: 1.5em;
+	font-style: bold;
+	padding: 150px 15px 15px 15px;
+	}
+
+/* names block */
+ol#names {
+	background: rgb(189,190,192);
+	color: #666;
+	display: block;
+	height: 200px;
+	list-style-position: inside;
+	margin: 20px 0 0 490px;
+	position: absolute;
+	left: 50%;
+	width: 200px;
+	}
+
+ol#names li { font-size: 80%; line-height: 150%; margin: 0 .5em; }	
+ol#names li.one { margin-top: 1em;}	
+ol#names li.nine { margin-bottom: .5em;}	
+ol#names li a { color: #666; text-decoration: none; }
+ol#names li:hover { background: #666; color:  white; }
+ol#names li:hover a { background: #666; color: white; }
+ol#names li a:hover { background: #666; color: white; }
+
+/**/
+#footer {
+	clear: both;
+	margin: 0 20px;
+	padding: .25em .4em .5em .4em;
+	background: #666;
+	}
+#footer a {
+	color: white;
+	font-size: .75em;
+	font-style: bold;
+	text-decoration: none;
+	}
+#footer a:hover { text-decoration: underline; }
+
+/* the end */
+/* by kristian bjørnard - www.kristianbjornard.com */
+/* I can do work for you, just like I did for th GD/MFA at MICA! */
